@@ -1,24 +1,44 @@
 <!doctype html>
 <html>
 <head>
+  <link rel="stylesheet" href="/static/madlibs.css">	
   <title>Madlib</title>
 </head>
 <body>
+	<div id="inputs">
+		<form action="/madlib">
+			<p id="game-header">Please enter the following:</p>
+			<div id="inputs1">
+				<label for="person-name">Name</label>
+				<input type="text" name="person-name" id="person-name" class="inputs-game">
+	
+				<label for="color">Color</label>
+				<input type="text" name="color" id="color" class="inputs-game" >
+	
+				<label for="noun1">Noun 1</label>
+				<input type="text" name="noun1" id="noun1" class="inputs-game">
+			</div>
 
-  <form action="/madlib">
-    Please enter the following.<br>
-    <label for="person-name">Name</label>
-    <input type="text" name="person-name" id="person-name"><br>
+			<div id="inputs2">
+				<label for="place">Place</label>
+				<input type="text" name="place" id="place" class="inputs-game">
 
-    <label for="color">Color</label>
-    <input type="text" name="color" id="color"><br>
+				<label for="verb1">Verb 1</label>
+				<input type="text" name="verb1" id="verb1" class="inputs-game">   
+		
+				<label for="noun2">Noun 2</label>
+				<input type="text" name="noun2" id="noun2" class="inputs-game">
+			</div>	
 
-    <label for="noun">Noun</label>
-    <input type="text" name="noun" id="noun"><br>
-    
-    <label for="adjective">Adjective</label>
-    <input type="text" name="adjective" id="adjective"><br>
-   
-    <form><input type="submit"></form> 
+			<div id="inputs3">
+				<label for="verb2">Verb 2</label>
+				<input type="text" name="verb2" id="verb2" class="inputs-game">     
+	
+				<label for="adjective">Adjective</label>
+				<input type="text" name="adjective" id="adjective" class="inputs-game">
+			</div>	
+		
+			<form><input type="submit" class="submit-button"></form>  
+	</div>		
 </body>
 </html> 
